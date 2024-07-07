@@ -2,6 +2,8 @@
 
 ## Description
 
+react light onboarding tour
+
 ## Installation
 
 You can install the package via npm:
