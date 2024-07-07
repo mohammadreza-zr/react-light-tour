@@ -1,7 +1,7 @@
 {
   "name": "react-light-tour",
-  "version": "0.0.3",
-  "description": "light onboarding tour for react",
+  "version": "0.0.4",
+  "description": "lightweight onboarding tour for react",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "exports": {
@@ -43,7 +43,7 @@
     "url": "https://mr-zare.ir"
   },
   "license": "MIT",
-  "homepage": "https://github.com/mohammadreza-zr/react-light-tour",
+  "homepage": "https://react-light-tour-docs.vercel.app",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mohammadreza-zr/react-light-tour.git"

@@ -58,3 +58,7 @@ The `react-light-tour` component accepts the following props:
 - `nextText`: (Optional) Text for the next button.
 - `previewText`: (Optional) Text for the preview button.
 - `doneText`: (Optional) Text for the done button.
+
+# Screenshots
+
+<img src="https://react-light-tour-docs.vercel.app/Screenshot-react-light-tour.png" alt="Screenshot-react-light-tour" width="400">
