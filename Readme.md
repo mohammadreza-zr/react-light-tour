@@ -61,4 +61,4 @@ The `react-light-tour` component accepts the following props:
 
 # Screenshots
 
-<img src="https://react-light-tour-docs.vercel.app/Screenshot-react-light-tour.png" alt="Screenshot-react-light-tour" width="400">
+<img src="https://react-light-tour-docs.vercel.app/Screenshot-react-light-tour.png" alt="Screenshot-react-light-tour" width="400" style="object-fit:contain;">
