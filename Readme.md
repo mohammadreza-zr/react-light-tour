@@ -18,7 +18,7 @@ npm install react-light-tour
 'use client';
 
 import React, { useState } from 'react';
-import Tour, { Step, Steps } from 'react-light-tour';
+import Tour, { Steps } from 'react-light-tour';
 
 const App = () => {
   const [isTourRunning, setIsTourRunning] = useState(true);
@@ -49,7 +49,7 @@ export default App;
 
 ## Props
 
-The `NestedCheckbox` component accepts the following props:
+The `react-light-tour` component accepts the following props:
 
 - `isRun`: Flag to start or stop the tour.
 - `steps`: Array of steps for the tour.
