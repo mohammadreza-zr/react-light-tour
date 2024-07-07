@@ -1,0 +1,82 @@
+.active-tour {
+  padding: 1rem;
+  border: 1px solid #b0bec5;
+  border-radius: 16px;
+  position: relative;
+  z-index: 99999;
+}
+.active-tour * {
+  position: relative;
+  z-index: 99999;
+}
+.active-tour::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: #000 50;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  backdrop-filter: blur(4px);
+}
+.active-tour::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  border-radius: 16px;
+}
+.active-tour .tour-tooltip {
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 10px);
+  transform: translate(-50%, 0);
+  width: max-content;
+  background-color: white;
+  border-radius: 16px;
+  padding: 8px;
+}
+.active-tour .tour-tooltip::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  rotate: 45deg;
+}
+.active-tour .tour-tooltip .content {
+  padding: 20px;
+  padding-bottom: 10px;
+  position: relative;
+}
+.active-tour .tour-tooltip .close-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  background-color: #cc0144;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+}
+.active-tour .tour-tooltip .button-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 8px;
+}
