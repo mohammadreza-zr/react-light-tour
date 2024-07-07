@@ -5,7 +5,7 @@
   position: relative;
   z-index: 99999;
 }
-.active-tour * {
+.active-tour > * {
   position: relative;
   z-index: 99999;
 }
