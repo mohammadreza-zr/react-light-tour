@@ -15,6 +15,8 @@ const Tour = ({
   nextText = 'next',
   previewText = 'preview',
   doneText = 'done',
+  bodyScrollDisable = true,
+  scrollLogicalPosition = 'center',
 }: {
   isRun: boolean;
   steps: Steps;
@@ -23,6 +25,8 @@ const Tour = ({
   nextText?: string;
   previewText?: string;
   doneText?: string;
+  bodyScrollDisable?: boolean;
+  scrollLogicalPosition?: ScrollLogicalPosition;
 }) => {
   const [activeStep, setActiveStep] = React.useState(0);
   const isTourAddedRef = React.useRef<boolean>(false);
@@ -37,9 +41,11 @@ const Tour = ({
           isTourAddedRef.current = true;
           element.scrollIntoView({
             behavior: 'smooth',
-            block: 'center',
+            block: scrollLogicalPosition,
           });
-          document.body.style.overflow = 'hidden';
+          if (!bodyScrollDisable) {
+            document.body.style.overflow = 'hidden';
+          }
           element.classList.add('active-tour');
           const modal = document.createElement('div');
           modal.classList.add('tour-tooltip');
@@ -56,7 +62,9 @@ const Tour = ({
             element?.classList.remove('active-tour');
             const activeSection = document.querySelector('.tour-tooltip');
             activeSection?.remove();
-            document.body.style.overflow = 'auto';
+            if (!bodyScrollDisable) {
+              document.body.style.overflow = 'auto';
+            }
           });
 
           const text = document.createElement('p');
@@ -96,7 +104,9 @@ const Tour = ({
               addTour(activeStep + 1);
             } else {
               localStorage.setItem(saveKey, 'true');
-              document.body.style.overflow = 'auto';
+              if (!bodyScrollDisable) {
+                document.body.style.overflow = 'auto';
+              }
             }
           });
 
