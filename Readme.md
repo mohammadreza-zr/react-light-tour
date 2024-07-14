@@ -26,7 +26,7 @@ const App = () => {
   const steps: Steps = [
     { selector: '#step1', content: 'This is the first step' },
     { selector: '#step2', content: 'This is the second step' },
-    { selector: '#step3', content: 'This is the third step' },
+    { selector: '.step3', content: 'This is the third step' },
   ];
 
   return (
@@ -58,6 +58,8 @@ The `react-light-tour` component accepts the following props:
 - `nextText`: (Optional) Text for the next button.
 - `previewText`: (Optional) Text for the preview button.
 - `doneText`: (Optional) Text for the done button.
+- `bodyScrollDisable`: (Optional) body scrolling while tour is run.
+- `scrollLogicalPosition`: (Optional) scroll to center is default.
 
 # Screenshots
 
