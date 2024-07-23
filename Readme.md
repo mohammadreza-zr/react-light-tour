@@ -35,6 +35,7 @@ const App = () => {
       <Tour
         isRun={isTourRunning}
         steps={steps}
+        bodyScrollDisable={true}
         buttonsClassName={{ next: 'next-btn', preview: 'prev-btn' }}
       />
       <div id="step1">Step 1</div>
