@@ -1,6 +1,6 @@
 {
   "name": "react-light-tour",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "lightweight onboarding tour for react",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
